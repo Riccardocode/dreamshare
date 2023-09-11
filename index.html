@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Holiday Dream</title>
   </head>
   <body>
@@ -11,6 +14,9 @@
 
     <div class="hero">
       <header>
+        <div class="header-logo">
+            DREAMSHARE
+        </div>
         <!-- I will place the code for the login and signup button -->
         <div class="navbarLogin">
           <a href="#">
@@ -39,7 +45,8 @@
     <!-- start with the second screen view and the cards -->
     <div class="second-screen-view">
         <div class="how-dreamshare-works">How Dreamshare Works?</div>
-        <div id="card1" class="dreamshare-Card">
+        <div class="cards-group">
+            <div id="card1" class="dreamshare-Card">
             <div class="card-step">Step 1</div>
             <div class="card-maintext">Sed leo enim, condimentum</div>
             <div class="card-subtext">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</div>
@@ -57,14 +64,39 @@
             <div class="card-subtext">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</div>
 
         </div>
+        </div>
+        
     </div>
     <div class="search-section">
-        <div class="main-search-text"></div>
-        <div class="seach-message"></div>
-        <div class="search-input-box"></div>
-        <div class="search-button"></div>
+        <div class="main-search-text">Discover holiday activity ideas</div>
+        <div class="seach-message">Hi! What are your holiday interests?</div>
+        <div class="search-input-group">
+            <input type="text" class="search-input-box" placeholder="Enter your interests">
+            <div class="search-button">Search partners</div>
+        </div>
+      
     </div>
 
     <!-- end with the second screen view and the cards -->
+    <br>
+    <hr class="break-line-after-search-bar">
+    <br>
+    <footer>
+        <div class="footer-dreamshare">DREAMSHARE</div>
+        <div class="footer-company-group">
+             <div class="footer-company">Company</div>
+        <div class="footer-navbar">
+            <div class="menu-item">About</div>
+            <div class="menu-item">Contacts</div>
+            <div class="menu-item">Press</div>
+            <div class="menu-item">Blog</div>
+        </div>
+        </div>
+       
+        <div class="footer-partners">Partners</div>
+        <div class="footer-logo">
+            <img src="./assets/img/logo.png" alt="">
+        </div>
+    </footer>
   </body>
 </html>

@@ -1,10 +1,9 @@
-/* import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family='Montserrat':wght@400;700&family=Roboto:wght@300&display=swap");
-
 * {
   margin: 0;
   padding: 0;
 }
+
+/* Your tablet and above styles go here */
 
 /* general  for mobile */
 .hero {
@@ -25,6 +24,9 @@ header {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+.header-logo {
+  display: none;
 }
 .navbarLogin {
   width: 50vw;
@@ -178,38 +180,204 @@ a > .signup {
   padding: 3.45px 12.56px;
 }
 .dreamshare-Card > .card-maintext {
-    display: flex;
-    align-items: center;
-    width: 180px;
-    height: 58px;
-    
-    color: #ffffff;
-    text-align: left;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    
-  }
-  .dreamshare-Card > .card-subtext {
-    
-   
-    color: #CCCCCC;
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    
-  }
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 58px;
+
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.dreamshare-Card > .card-subtext {
+  color: #cccccc;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
 
 #card1 {
   background-image: url("./assets/img/step1desk.png");
-  
 }
 #card2 {
-background-image: url("./assets/img/step2desk.png");
-
+  background-image: url("./assets/img/step2desk.png");
 }
 #card3 {
-background-image: url("./assets/img/step3desk.png");
-
+  background-image: url("./assets/img/step3desk.png");
 }
 
 /*********************** search Section **************************/
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.main-search-text {
+  width: 90vw;
+  max-width: 282px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  /* font */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 21.94px;
+}
+.search-message {
+  width: 276px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  /* font */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 17.95px;
+}
+.search-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.search-input-box {
+  width: 280px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+}
+.search-input-box::placeholder {
+  color: #cccccc;
+  opacity: 1;
+  /* font */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 17.95px;
+  text-indent: 10px;
+}
+
+.search-button {
+  background-color: #ff4e50;
+  border-radius: 20px;
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/******************* break line ***********************/
+.break-line-after-search-bar {
+  color: #ff4e50;
+  background-color: #ff4e50;
+  width: 1440px;
+  height: 4px;
+  border: 0;
+}
+/******************* footer *******************/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.footer-dreamshare {
+  color: #ff4e50;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-company-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.footer-company {
+  color: #333333;
+  font-size: 13.98px;
+}
+.footer-navbar {
+  display: flex;
+  gap: 15px;
+}
+.footer-navbar > .menu-item {
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 13.98px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  header {
+    justify-content: space-between;
+    width: 95vw;
+  }
+  .navbarLogin {
+    justify-content: flex-end;
+  }
+  .heroText > .dreamshare {
+    display: none;
+  }
+  .heroText > .mainPhrase {
+    font-size: 52px;
+    width: 80vw;
+    max-width: 510px;
+  }
+  .heroText > .subtitlehero {
+    max-width: 400px;
+  }
+
+  /**************** Second section *******************/
+  .cards-group {
+    display: flex;
+    gap: 15px;
+  }
+  .dreamshare-Card {
+    width: 236px;
+    height: 400px;
+  }
+
+  /****************** Search Section ******************/
+  .search-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .search-input-group {
+    flex-direction: row;
+  }
+  /**************** footer section **************/
+
+  footer{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .footer-navbar{
+    flex-direction: column;
+  }
+  .footer-company-group{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
