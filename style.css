@@ -13,16 +13,17 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 /* Log section for mobile */
 header {
-  position: fixed;
-  top: 19px;
+  
   width: 100vw;
   display: flex;
+  height: 10vh;
+  
   justify-content: center;
 }
 .header-logo {
@@ -67,7 +68,9 @@ a > .signup {
 }
 .heroText {
   width: 90vw;
+  height: 90vh;
   height: 50vh;
+  margin-top: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -380,4 +383,36 @@ footer {
     flex-direction: column;
     gap: 15px;
   }
+}
+
+/*-------------------- Desktop view --------------------*/
+@media screen and (min-width: 940px) {
+    header{
+        width: 70vw;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .heroText{
+        gap: 40px;
+    }
+    .dreamshare-Card{
+        width: 300px;
+        height: 400px;
+    }
+    .card-maintext{
+        font-size: 24px;
+    }
+
+    .break-line-after-search-bar{
+        width: 100vw;
+    }
+
+    /* footer */
+    footer{
+        justify-self: center;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    /* end */
 }
